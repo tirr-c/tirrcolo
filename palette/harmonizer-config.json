@@ -1,0 +1,125 @@
+{
+  "levels": [
+    {
+      "name": "50",
+      "contrast": 90,
+      "chroma": 0.035,
+      "chromaCap": 0.035
+    },
+    {
+      "name": "100",
+      "contrast": 80,
+      "chroma": 0.055,
+      "chromaCap": 0.055
+    },
+    {
+      "name": "200",
+      "contrast": 73,
+      "chroma": 0.08,
+      "chromaCap": 0.08
+    },
+    {
+      "name": "300",
+      "contrast": 60,
+      "chroma": 0.095,
+      "chromaCap": 0.095
+    },
+    {
+      "name": "400",
+      "contrast": 50,
+      "chroma": 0.115,
+      "chromaCap": 0.115
+    },
+    {
+      "name": "500",
+      "contrast": 40,
+      "chroma": 0.125,
+      "chromaCap": 0.125
+    },
+    {
+      "name": "600",
+      "contrast": 48,
+      "chroma": 0.12,
+      "chromaCap": 0.12
+    },
+    {
+      "name": "700",
+      "contrast": 57,
+      "chroma": 0.105,
+      "chromaCap": 0.105
+    },
+    {
+      "name": "800",
+      "contrast": 66,
+      "chroma": 0.09,
+      "chromaCap": 0.09
+    },
+    {
+      "name": "900",
+      "contrast": 73,
+      "chroma": 0.075,
+      "chromaCap": 0.075
+    },
+    {
+      "name": "950",
+      "contrast": 77,
+      "chroma": 0.065,
+      "chromaCap": 0.065
+    }
+  ],
+  "hues": [
+    {
+      "name": "Red",
+      "angle": 15
+    },
+    {
+      "name": "Bronze",
+      "angle": 50
+    },
+    {
+      "name": "Yellow",
+      "angle": 80
+    },
+    {
+      "name": "Turmeric",
+      "angle": 110
+    },
+    {
+      "name": "Green",
+      "angle": 140
+    },
+    {
+      "name": "Aquamarine",
+      "angle": 170
+    },
+    {
+      "name": "Cyan",
+      "angle": 195
+    },
+    {
+      "name": "Blue",
+      "angle": 255
+    },
+    {
+      "name": "Violet",
+      "angle": 300
+    },
+    {
+      "name": "Magenta",
+      "angle": 330
+    },
+    {
+      "name": "Flamingo",
+      "angle": 355
+    }
+  ],
+  "settings": {
+    "contrastModel": "apca",
+    "directionMode": "fgToBg",
+    "chromaMode": "even",
+    "bgColorLight": "#dadada",
+    "bgColorDark": "#1c1c1c",
+    "bgLightStart": 6,
+    "colorSpace": "p3"
+  }
+}
