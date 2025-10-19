@@ -1,0 +1,97 @@
+{
+  "levels": [
+    {
+      "name": "1000",
+      "contrast": 76,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "950",
+      "contrast": 75,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "900",
+      "contrast": 73,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "800",
+      "contrast": 70,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "700",
+      "contrast": 64,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "600",
+      "contrast": 58,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "500",
+      "contrast": 51,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "400",
+      "contrast": 45,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "300",
+      "contrast": 37,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "200",
+      "contrast": 27,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "100",
+      "contrast": 13,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "50",
+      "contrast": 0,
+      "chroma": 0,
+      "chromaCap": 0
+    },
+    {
+      "name": "0",
+      "contrast": 90,
+      "chroma": 0,
+      "chromaCap": 0
+    }
+  ],
+  "hues": [
+    {
+      "name": "Gray",
+      "angle": 0
+    }
+  ],
+  "settings": {
+    "contrastModel": "apca",
+    "directionMode": "bgToFg",
+    "chromaMode": "even",
+    "bgColorLight": "#1c1c1c",
+    "bgColorDark": "#cecece",
+    "bgLightStart": 12,
+    "colorSpace": "p3"
+  }
+}

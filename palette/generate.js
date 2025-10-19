@@ -3,25 +3,14 @@ import * as path from 'node:path';
 
 const parseOklch = str => str.substring(6, str.length - 1).split(' ').map(Number);
 
-const grayGroup = {
-  name: 'gray',
-  h: 0,
-  levels: [
-    { level: 50, lc: [0.9248, 0] },
-    { level: 100, lc: [0.85, 0] },
-    { level: 300, lc: [0.7688, 0] },
-    { level: 500, lc: [0.6791, 0] },
-    { level: 700, lc: [0.577, 0] },
-    { level: 900, lc: [0.4546, 0] },
-    { level: 950, lc: [0.2264, 0] },
-  ],
-};
-
 const palettePath = path.resolve(import.meta.dirname, './palette.json');
 const palette = JSON.parse(await fs.promises.readFile(palettePath, { encoding: 'utf-8' }));
-const grouped = {};
 
-for (const item of palette) {
+const paletteGrayPath = path.resolve(import.meta.dirname, './palette-gray.json');
+const paletteGray = JSON.parse(await fs.promises.readFile(paletteGrayPath, { encoding: 'utf-8' }));
+
+const grouped = {};
+for (const item of [...palette, ...paletteGray]) {
   const { level, oklch } = item;
   const hue = item.hue.toLowerCase();
   if (grouped[hue] == null) {
@@ -45,7 +34,6 @@ for (const [hue, groups] of Object.entries(grouped)) {
   });
 }
 
-hueGroups.push(grayGroup);
 hueGroups.sort((a, b) => a.h - b.h);
 
 const paletteBody = hueGroups.map(({ name, h, levels }) => {

@@ -36,11 +36,21 @@ local function matmul_vec(mat, v)
 end
 
 local function lms_to_linear_srgb(lms)
+  if lms.l == lms.m and lms.m == lms.s then
+    local v = lms.l
+    return { r = v, g = v, b = v }
+  end
+
   local v = matmul_vec(XYZ_SRGB_MAT, { lms.l, lms.m, lms.s })
   return { r = v[1], g = v[2], b = v[3] }
 end
 
 local function lms_to_linear_p3(lms)
+  if lms.l == lms.m and lms.m == lms.s then
+    local v = lms.l
+    return { r = v, g = v, b = v }
+  end
+
   local v = matmul_vec(XYZ_P3_MAT, { lms.l, lms.m, lms.s })
   return { r = v[1], g = v[2], b = v[3] }
 end

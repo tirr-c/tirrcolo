@@ -1,0 +1,80 @@
+[
+  {
+    "level": "1000",
+    "hue": "Gray",
+    "oklch": "oklch(0.2 0 0)",
+    "hex": "#151515"
+  },
+  {
+    "level": "950",
+    "hue": "Gray",
+    "oklch": "oklch(0.24 0 0)",
+    "hex": "#1e1e1e"
+  },
+  {
+    "level": "900",
+    "hue": "Gray",
+    "oklch": "oklch(0.29 0 0)",
+    "hex": "#2a2a2a"
+  },
+  {
+    "level": "800",
+    "hue": "Gray",
+    "oklch": "oklch(0.34 0 0)",
+    "hex": "#373737"
+  },
+  {
+    "level": "700",
+    "hue": "Gray",
+    "oklch": "oklch(0.41 0 0)",
+    "hex": "#494949"
+  },
+  {
+    "level": "600",
+    "hue": "Gray",
+    "oklch": "oklch(0.47 0 0)",
+    "hex": "#595959"
+  },
+  {
+    "level": "500",
+    "hue": "Gray",
+    "oklch": "oklch(0.53 0 0)",
+    "hex": "#6b6b6b"
+  },
+  {
+    "level": "400",
+    "hue": "Gray",
+    "oklch": "oklch(0.57 0 0)",
+    "hex": "#787878"
+  },
+  {
+    "level": "300",
+    "hue": "Gray",
+    "oklch": "oklch(0.63 0 0)",
+    "hex": "#898989"
+  },
+  {
+    "level": "200",
+    "hue": "Gray",
+    "oklch": "oklch(0.69 0 0)",
+    "hex": "#9c9c9c"
+  },
+  {
+    "level": "100",
+    "hue": "Gray",
+    "oklch": "oklch(0.78 0 0)",
+    "hex": "#b6b6b6"
+  },
+  {
+    "level": "50",
+    "hue": "Gray",
+    "oklch": "oklch(0.85 0 0)",
+    "hex": "#cecece"
+  },
+  {
+    "level": "0",
+    "hue": "Gray",
+    "oklch": "oklch(0.93 0 0)",
+    "hex": "#e8e8e8"
+  }
+]
