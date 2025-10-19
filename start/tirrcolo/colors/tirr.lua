@@ -67,14 +67,14 @@ local highlights = {
   Boolean = { fg = colors.violet['400'] },
   Float = { link = 'Number' },
 
-  Identifier = { fg = colors.bronze['200'] },
+  Identifier = { fg = colors.make('bronze', '200', 0.8) },
   Function = { fg = colors.yellow['200'] },
 
   Statement = { bold = true, fg = colors.green['400'] },
   Conditional = { fg = colors.blue['400'] },
   Repeat = { fg = colors.blue['400'] },
   Label = { bold = true, fg = colors.green['300'] },
-  Operator = { fg = colors.yellow['100'] },
+  Operator = { fg = colors.make('yellow', '200', 0.7) },
   Keyword = { fg = colors.flamingo['400'] },
   Exception = { fg = colors.make('flamingo', '500', 1.3) },
 
