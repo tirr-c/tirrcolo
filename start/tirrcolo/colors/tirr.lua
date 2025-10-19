@@ -31,8 +31,11 @@ local highlights = {
   ErrorMsg = { fg = colors.red['300'] },
   WarningMsg = { fg = colors.yellow['300'] },
 
-  LineNr = { fg = colors.yellow['700'], bg = colors.gray['1000'] },
-  CursorLineNr = { fg = colors.yellow['500'], bg = colors.gray['1000'] },
+  LineNr = { fg = colors.make('yellow', '600', 0.7), bg = colors.gray['1000'] },
+  CursorLineNr = { fg = colors.make('yellow', '500', 0.9), bg = colors.gray['1000'] },
+  Folded = { fg = colors.make('yellow', '600', 0.9), bg = colors.gray['1000'] },
+  FoldColumn = { bg = colors.gray['1000'] },
+  SignColumn = { bg = colors.gray['1000'] },
 
   MatchParen = { bold = true, bg = colors.gray['900'] },
 
@@ -102,6 +105,11 @@ local highlights = {
   DiagnosticUnderlineInfo = { underline = true, sp = colors.cyan['300'] },
   DiagnosticUnderlineHint = { underline = true, sp = colors.blue['300'] },
   DiagnosticUnderlineOk = { underline = true, sp = colors.green['400'] },
+  DiagnosticSignError = { fg = colors.red['300'], bg = colors.gray['1000'] },
+  DiagnosticSignWarn = { fg = colors.yellow['300'], bg = colors.gray['1000'] },
+  DiagnosticSignInfo = { fg = colors.cyan['300'], bg = colors.gray['1000'] },
+  DiagnosticSignHint = { fg = colors.blue['300'], bg = colors.gray['1000'] },
+  DiagnosticSignOk = { fg = colors.green['400'], bg = colors.gray['1000'] },
 
   -- treesitter groups
   ['@variable'] = { fg = colors.gray['50'] },
@@ -134,4 +142,13 @@ vim.cmd.highlight({ 'clear' })
 
 for hi, opt in pairs(highlights) do
   vim.api.nvim_set_hl(0, hi, opt)
+end
+
+local ansi_colors = {
+  colors.gray['1000'], colors.red['400'], colors.green['400'], colors.yellow['400'], colors.blue['400'], colors.magenta['400'], colors.cyan['400'], colors.gray['50'],
+  colors.gray['900'], colors.red['200'], colors.green['200'], colors.yellow['200'], colors.blue['200'], colors.magenta['200'], colors.cyan['200'], colors.gray['0'],
+}
+vim.g.terminal_ansi_colors = ansi_colors
+for idx, color in pairs(ansi_colors) do
+  vim.g['terminal_color_' .. (idx - 1)] = color
 end
