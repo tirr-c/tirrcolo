@@ -145,8 +145,8 @@ for hi, opt in pairs(highlights) do
 end
 
 local ansi_colors = {
-  colors.gray['1000'], colors.red['400'], colors.green['400'], colors.yellow['400'], colors.blue['400'], colors.magenta['400'], colors.cyan['400'], colors.gray['50'],
-  colors.gray['900'], colors.red['200'], colors.green['200'], colors.yellow['200'], colors.blue['200'], colors.magenta['200'], colors.cyan['200'], colors.gray['0'],
+  colors.gray['900'], colors.red['400'], colors.green['400'], colors.yellow['400'], colors.blue['400'], colors.magenta['400'], colors.cyan['400'], colors.gray['100'],
+  colors.gray['700'], colors.red['200'], colors.green['200'], colors.yellow['200'], colors.blue['200'], colors.magenta['200'], colors.cyan['200'], colors.gray['0'],
 }
 vim.g.terminal_ansi_colors = ansi_colors
 for idx, color in pairs(ansi_colors) do
